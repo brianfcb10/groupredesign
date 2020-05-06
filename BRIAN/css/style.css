@@ -74,6 +74,11 @@ a:visited {
   color:  #000;
 	text-decoration: none
 }
+
+img{
+	max-width: 100%;
+	height:auto;
+}
 /* Grid System */
 .container {
 	width: 100%;
