@@ -8,7 +8,7 @@
 :root {
 	--gutter: 1rem;
 	--grid: calc( 100% / 12);
-	--main-color:#000;
+	--main-color:#FFF;
 	--light-accent:#FFF;
 	--dark-accent:#000;
 	--light-shade:#FFF;
@@ -37,20 +37,25 @@ body {
   font-size: 1rem;
   line-height: 1.618em;
 	background: var(--main-color);
+	background-image:url('../images/lightbg.png');
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--light-accent);
 font-family: 'Roboto Slab', serif;
 }
 
-p{font-family: 'Montserrat', sans-serif;
-	
+p {
+	font-family: 'Montserrat', sans-serif;
 }
 
 .contentbox {
-  background-color: #fff;
   padding:20px;
+}
+
+.emphasis {
+	background-color: #fff;
+	border: 2px solid gray;
+	padding:15px;
 }
 
 .contentbox h3 {
@@ -68,10 +73,11 @@ footer{
 	justify-content: space-around;
 	align-content: flex-start;
 	background-color: var(--light-shade);
-	border: solid;	
+	border: solid;
 }
 
-li{display: inline-block;
+li{
+	display: inline-block;
 	text-decoration:none;
 	list-style-type: none;
 	padding:0;
@@ -95,7 +101,7 @@ img{
 
 a{color:green;}
 
-a:hover{color:yellow; 
+a:hover{color:yellow;
 }
 
 .locationtxt{color: white;
@@ -411,6 +417,8 @@ nav {
   align-content: flex-start;
   padding: calc(1rem / 1.618);
   background-color: var(--white);
+	font-family: 'Roboto Slab', serif;
+
 }
 
 nav .open {
@@ -427,11 +435,34 @@ nav a.navbar-brand {
   text-indent: -999999px;
   margin-bottom: 1rem;
 	background: url("../images/Logo.png") no-repeat 0 0/contain transparent;
-	
+	font-family: 'Roboto Slab', serif;
+}
+
+.row-full {
+width: 100vw;
+position: relative;
+margin-left: -50vw;
+left: 50%;
+background-image:url('../images/herobg.jpeg');
+background-position: center center;
+height:600px;
+background-size:cover;
+}
+
+button {
+	background-color:#44c767;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
 }
 
 nav button.navbar-toggler {
-  background-color: var(--black);
+  background-color: var(--white);
   border: 0;
   padding: calc(1em / 1.618) 1em;
   color: var(--green);
@@ -498,7 +529,7 @@ nav .navbar-collapse .navbar-nav .nav-item.dropdown .dropdown-menu {
 
 @media screen and (min-width: 960px){
   nav {
-    
+
   }
 
   nav .navbar-collapse {
@@ -547,6 +578,10 @@ img.logo {
   width: 75%;
 }
 
+
+.ourFavorites {
+  text-align: center;
+}
 
 .ourFavorites {
   text-align: center;
