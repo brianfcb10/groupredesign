@@ -48,6 +48,7 @@ p {
 	font-family: 'Montserrat', sans-serif;
 }
 
+
 .contentbox {
   padding:20px;
 }
@@ -104,10 +105,7 @@ a{color:green;}
 a:hover{color:yellow;
 }
 
-.locationtxt{color: white;
-}
 
-.shuttletxt{color:white;}
 
 /* Grid System */
 .container {
@@ -454,7 +452,7 @@ button {
 	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color:green;
 	font-size:17px;
 	padding:16px 31px;
 	text-decoration:none;
@@ -463,7 +461,7 @@ button {
 
 nav button.navbar-toggler {
   background-color: var(--white);
-  border: 0;
+  border: 1rem thin #000;
   padding: calc(1em / 1.618) 1em;
   color: var(--green);
   font-size: 1em;
